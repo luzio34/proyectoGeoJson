@@ -1,0 +1,37 @@
+<h1>Features</h1>
+
+
+
+<div class="filter-buttons">
+  <button *ngFor="let magType of magTypes" 
+          (click)="toggleFilter(magType)" 
+          [class.active]="isSelectedMagType(magType)">
+    {{ magType }}
+  </button>
+</div>
+
+<ul>
+  <li *ngFor="let feature of filteredFeatures" class="feature-item">
+    <p>Id: {{ feature.id }}</p>
+    <p>Type: {{ feature.type }}</p>
+    <p>External_id: {{ feature.attributes.external_id }}</p>
+    <p>Magnitude: {{ feature.attributes.magnitude }}</p>
+    <p>Place: {{ feature.attributes.place }}</p>
+    <p>Time: {{ feature.attributes.time }}</p>
+    <p>Tsunami: {{ feature.attributes.tsunami }}</p>
+    <p>Mag_Type: {{ feature.attributes.mag_type }}</p>
+    <p>Title: {{ feature.attributes.title }}</p>
+    <p>Coordinates: {{ feature.attributes.coordinates.latitude }}, {{ feature.attributes.coordinates.longitude }}</p>
+    <p>External URL: <a href="{{ feature.links.external_url }}" target="_blank">{{ feature.links.external_url }}</a></p>
+    <button (click)="openCommentDialog(feature.id)">Agregar Comentario</button> 
+  </li>
+</ul>
+
+
+
+<!-- Agregar la sección de paginación -->
+<div *ngIf="pagination">
+  <p>Current Page: {{ pagination.current_page }}</p>
+  <p>Total: {{ pagination.total }}</p>
+  <p>Per Page: {{ pagination.per_page }}</p>
+</div>

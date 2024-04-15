@@ -1,0 +1,33 @@
+.comment-dialog {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .comment-dialog h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .comment-dialog .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .comment-dialog .form-group label {
+    font-weight: bold;
+  }
+  
+  .comment-dialog .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .comment-dialog .form-group button {
+    margin-right: 10px;
+  }
