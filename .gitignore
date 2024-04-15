@@ -1,0 +1,30 @@
+# Archivos de compilación
+*.o
+*.out
+*.exe
+*.dll
+*.so
+*.dylib
+
+# Archivos de respaldo y temporales
+*~
+.DS_Store
+Thumbs.db
+
+# Directorios generados
+/build/
+/bin/
+/node_modules/
+
+# Archivos de configuración
+*.log
+*.config
+*.ini
+*.env
+
+# Archivos de credenciales y secretos
+.env
+*.key
+*.pem
+
+# Dependiendo del lenguaje y entorno de tu proyecto, puedes agregar más líneas aquí para ignorar archivos específicos de tu stack tecnológico.
