@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http'; // Agregamos la importación del HttpClient
+import { HttpClient } from '@angular/common/http'; 
 import { ApiService } from './api.service';
 import { CommonModule } from '@angular/common';
 import { MatDialog } from '@angular/material/dialog';
@@ -89,14 +89,14 @@ export class AppComponent implements OnInit {
     openCommentDialog(featureId: number) {
       // Abre el cuadro de diálogo
       const dialogRef = this.dialog.open(CommentDialogComponent, {
-        width: '400px', // Ancho del cuadro de diálogo
+        width: '400px', 
         data: { featureId } // Pasa el ID del feature al cuadro de diálogo
       });
   
       // Maneja el resultado del cuadro de diálogo si es necesario
       dialogRef.afterClosed().subscribe(result => {
         console.log('El cuadro de diálogo fue cerrado');
-        // Aquí puedes realizar acciones adicionales después de que el cuadro de diálogo se haya cerrado
+        
       });
     }
 

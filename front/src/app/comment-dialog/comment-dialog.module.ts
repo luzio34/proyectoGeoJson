@@ -11,7 +11,7 @@ import { CommentDialogComponent } from './comment-dialog.component';
   ],
   imports: [
     CommonModule,
-    FormsModule, // Asegúrate de importar FormsModule aquí
+    FormsModule, 
     MatDialogModule,
     HttpClientModule
   ],
