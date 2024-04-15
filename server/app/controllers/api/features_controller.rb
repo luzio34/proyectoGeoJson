@@ -8,7 +8,7 @@ module Api
         @features = @features.where(mag_type: params[:filters][:mag_type])
       end
 
-      # Paginar los resultados si se proporcionan los parámetros correspondientes
+      
       per_page = params[:per_page] || 1000
       @features = @features.paginate(page: params[:page], per_page: per_page)
 
